@@ -6,7 +6,7 @@ import org.example.ados.ado1.exe4.composite.Produto;
 public class Cliente {
     public static void main(String[] args) {
         
-        Caixa compras = new Caixa();
+        CarrinhoDeCompras carrinhoDeCompras = new CarrinhoDeCompras();
         
         Caixa caixaMacas = new Caixa();
         Produto maca1 = new Produto(20d);
@@ -22,10 +22,10 @@ public class Cliente {
         CaixaAbacates.add(abacate1);
         CaixaAbacates.add(abacate2);
 
-        compras.add(caixaMacas);
-        compras.add(CaixaAbacates);
+        carrinhoDeCompras.add(caixaMacas);
+        carrinhoDeCompras.add(CaixaAbacates);
 
-        double valorTotal = compras.precoTotal();
+        double valorTotal = carrinhoDeCompras.precoTotal();
 
         System.out.println("Valor total das compras: " + valorTotal);
 
